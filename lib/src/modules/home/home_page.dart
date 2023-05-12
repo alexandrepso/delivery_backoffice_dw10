@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart' show AppBar, BuildContext, Colors, Container, FloatingActionButton, Scaffold, State, Text, Widget;
-import '../../helpers/loader.dart';
-import '../../helpers/messages.dart';
-import '../../helpers/size_extensions.dart';
+import '../../style/colors_apps.dart';
+import '../../ui/helpers/loader.dart';
+import '../../ui/helpers/messages.dart';
+import '../../ui/helpers/size_extensions.dart';
 
 
 
@@ -34,7 +35,7 @@ class HomePage extends State<HomePage> with loader, Messages {
 
       }),
       body: Container(
-        child: Container  (color: Colors.red,width: context.percentWidth(.5),height: context.percentHeigth(.9)),),
+        child: Container  (color: context.colors.primary,width: context.percentWidth(.5),height: context.percentHeigth(.9)),),
       
     );
   }
